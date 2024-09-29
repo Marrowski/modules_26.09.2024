@@ -1,5 +1,4 @@
 import shelve
-import json
 
 FILENAME = 'sites_dict'
 with shelve.open(FILENAME) as file:
@@ -19,8 +18,5 @@ dictionary_services = {
     'TikTok': 'https://www.tiktok.com/uk-UA/',
     'Instagram': 'https://www.instagram.com/',
     'Rozetka': 'https://rozetka.com.ua/ua/',
-    'GitHub': 'https://github.com/'
+    'GitHub': 'https://github.com/',
 }
-
-with open('services.json', 'w') as new_f:
-    new_f.write(json.dumps(dictionary_services))

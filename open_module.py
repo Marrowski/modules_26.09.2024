@@ -1,4 +1,4 @@
-import task1 as load
+import main as load
 import json
 
 
